@@ -20,6 +20,10 @@ use App\Http\Controllers\AlbumController;
     Route::get('/getAllAlbumsById', [AlbumController::class, 'getAllAlbumsById']);
     Route::post('/addSingleAlbum', [AlbumController::class, 'addSingleAlbum']);
     Route::get('/getSingleAlbumById', [AlbumController::class, 'getSingleAlbumById']);
+    Route::get('/getSelectListItems', [AlbumController::class, 'getSelectListItems']);
+    Route::get('/deletePhoto', [AlbumController::class, 'deletePhoto']);
+    Route::post('/addPhoto', [AlbumController::class, 'addPhoto']);
+
     
 // Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     return $request->user();
